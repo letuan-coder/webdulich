@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web tour du lịch </title>
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header position-absoulute w-100" id="header">
+      <div class="container">
+        <h1><a href="#">TOUR</a></h1>
+        <div class="header__right">
+          <form class="header__search position-relative">
+            <input type="search" placeholder="Search here.." />
+            <i class="fa fa-search position-absolute"></i>
+          </form>
+          <label for="checkbox" class="label">
+            <input type="checkbox" class="checkbox d-none" id="checkbox" />
+            <i class="fa fa-moon" id="moon"><i class="fa fa-sun" id="sun"></i></i>
+            
+          </label>
+
+          <button onclick="openNav()"><i class="fa fa-bars"></i></button>
+          <div id="myNav" class="overlay">
+            <a href="#" class="closebtn" onclick="closeNav()"> &times;</a>
+            <div class="overlay-content">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Blog</a>
+              <a href="#">404</a>
+              <a href="#">Landing Page</a>
+              <a href="#">Contact</a>
+              <a href="#">Shot Codes</a>
+              <a href="#">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner">
+      <div class="container">
+        <h1>Cho bạn trải nghiệm tuyệt vời !</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae
+          sit.Ea ipsum sed consequuntur illum facere.
+        </p>
+        <div class="banner__button">
+          <button>Read More ></button>
+        </div>
+      </div>
+    </section>
+    <section class="intro">
+      <div class="container">
+        <div class="intro__left">
+          <h1>About Us</h1>
+          <h1>We found our creative space that is open for you.</h1>
+        </div>
+        <div class="intro__right">
+          <p class="mb-2">
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+            in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit.
+            Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet. Lorem ipsum
+            init dolor sit, amet elit. Dolor ipsum non velit, culpa!Lorem ipsum
+            init dolor sit.
+          </p>
+          <p>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+            in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet elit.
+            Non quae, fugiat nihil ad. Lorem ipsum dolor sit amet
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="agent d-flex">
+      <div class="agent__img w-50">
+        <img src="./images/TourSing.jpeg" />
+      </div>
+      <div class="agent__content w-50">
+        <div class="agent__detail">
+          <h1>Hơn 10 nghìn tour mỗi năm </h1>
+          <h1>Đặt vé với mức giá hợp lý</h1>
+          <p>
+            Vestibulum ante ipsum primis in faucibus orci luctus turpis sodales
+            quis. Integer sit amet mattis quam.Vivamus a ligula quam tesque et
+            libero ut justo ultrices in.
+          </p>
+        </div>
+        <div class="agent__list">
+          <div class="agent__item">
+            <div class="agent__icon">
+              <i class="fa-solid fa-plane"></i>
+            </div>
+            <a href="#">Best Deals</a>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+          </div>
+          <div class="agent__item">
+            <div class="agent__icon">
+              <i class="fa-solid fa-plane"></i>
+            </div>
+            <a href="#">Best Deals</a>
+            <p>Lorem ipsum viverra feugiat. Pellen tesque libero justo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="category">
+      <div class="container">
+        <div class="category__heading">
+          <h1>What's New</h1>
+          <h1>Popular Categories</h1>
+        </div>
+        <div class="category__list">
+          <div class="category__item">
+            <a href="#">
+              <img height="100%" src="./images/TourHanQuoc.JPG" alt="" />
+            </a>
+            <div class="category__detail">
+              <a href="#">Hàn Quốc </a>
+              <span>$350</span>
+            </div>
+          </div>
+          <div class="category__item">
+            <a href="#">
+              <img height="100%" src="./images/TourDubai.JPG" alt="" />
+            </a>
+            <div class="category__detail">
+              <a href="#">Dubai</a>
+              <span>$550</span>
+            </div>
+          </div>
+          <div class="category__item">
+            <a href="#">
+              <img height="100%" src="./images/TourDaiLoan.jpeg" alt="" />
+            </a>
+            <div class="category__detail">
+              <a href="#">Đài Loan</a>
+              <span>$650</span>
+            </div>
+          </div>
+          <div class="category__item">
+            <a href="#">
+              <img height="100%"src="./images/TourPhuQuoc.jpeg" alt="" />
+            </a>
+            <div class="category__detail">
+              <a href="#">Phu Quoc</a>
+              <span>$550</span>
+            </div>
+          </div>
+          <div class="category__item">
+            <a href="#">
+              <img src="./images/TourNhatBan.jpeg" alt="" />
+            </a>
+            <div class="category__detail">
+              <a href="#">Nhật Bản </a>
+              <span>$750</span>
+            </div>
+          </div>
+          <div class="category__item">
+            <a href="#">
+              <img height="100%" src="./images/TourThaiLan.jpeg" alt="" />
+            </a>
+            <div class="category__detail">
+              <a href="#">Thái Lan</a>
+              <span>$850</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="menu">
+      <div class="container">
+        <div class="menu__list">
+          <div class="menu__item">
+            <div class="menu__item__content">
+              <div class="menu__item__heading">
+                <i class="fa fa-users"></i>
+                <div class="menu__item__info">
+                  <p>01</p>
+                  <a href="#">Tour Dubai</a>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item__content">
+              <div class="menu__item__heading">
+                <i class="fa-solid fa-yin-yang"></i>
+                <div class="menu__item__info">
+                  <p>02</p>
+                  <a href="#">Tour Hàn Quốc </a>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item__content">
+              <div class="menu__item__heading">
+                <i class="fa-solid fa-torii-gate"></i>
+                <div class="menu__item__info">
+                  <p>03</p>
+                  <a href="#">Tour Nhật Bản</a>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item__content">
+              <div class="menu__item__heading">
+                <i class="fa-solid fa-handshake"></i>
+                <div class="menu__item__info">
+                  <p>04</p>
+                  <a href="#">Tour Đài Loan</a>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item__content">
+              <div class="menu__item__heading">
+                <i class="fa-regular fa-face-smile-beam"></i>
+                <div class="menu__item__info">
+                  <p>05</p>
+                  <a href="#">Tour Singapore</a>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+          <div class="menu__item">
+            <div class="menu__item__content">
+              <div class="menu__item__heading">
+                <i class="fa-solid fa-star"></i>
+                <div class="menu__item__info">
+                  <p>06</p>
+                  <a href="#">Tour Phú Quốc</a>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+                vitae sit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <div class="contact__content">
+          <h1>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi
+            vitae sit.</h1>
+          <div class="contact__btn">
+            <button type="button" class="btn btn-primary btn-lg">
+              Read More >
+            </button>
+            <button type="button" class="btn btn-primary btn-lg">
+              Contact Us >
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statistic">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="statistic__item">
+              <i class="fa fa-building"></i>
+              <div id="counter">
+                <div class="counter-value" data-count="10000">10,000</div>
+              </div>
+              <p>tour each year</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="statistic__item">
+              <i class="fa fa-utensils"></i>
+              <div id="counter">
+                <div class="counter-value" data-count="300000">300,0000</div>
+              </div>
+              <p>customer each year</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="statistic__item">
+              <i class="fa fa-users"></i>
+              <div id="counter">
+                <div class="counter-value" data-count="12000">12,000</div>
+              </div>
+              <p>Staff</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="statistic__item">
+              <i class="fa fa-smile"></i>
+              <div id="counter">
+                <div class="counter-value" data-count="256000">256,000</div>
+              </div>
+              <p>Happy Customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="video">
+      <div class="container">
+        <div class="video__content">
+          <button>
+            <a href="#">
+              <i class="fa fa-play"> </i>
+            </a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="container">
+        <div class="blog__heading">
+          <h1>Latest Posts</h1>
+          <h1>Blog Posts</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+            <div class="blog__item__content">
+              <a href="#"><img height="100%" src="./images/TourHanQuoc.JPG" alt="#" /></a>
+
+              <div class="blog__img__detail">
+                <a href="#">Korea Tour </a>
+                <span><i class="fa fa-clock"></i>2 day 3 night</span>
+              </div>
+              
+              <a href="#" class="blog__head__a">the best tour ever 
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                vitae sit.
+              </p>
+
+              <div class="blog__maker">
+                <img src="./images/Reporteravatar.jpeg" alt="#" />
+                <span>Rashed Kabir</span>
+                <a href="#">Read More ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="blog__item__content">
+              <a href="#"><img src="./images/TourDaiLoan.jpeg" alt="#" /></a>
+              <div class="blog__img__detail">
+                <a href="#">TaiWan Tour </a>
+                <span><i class="fa fa-clock"></i>5 day 4 night </span>
+              </div>
+              <a href="#" class="blog__head__a"
+                >The best tour ever
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                vitae sit.
+              </p>
+              <div class="blog__maker">
+                <img src="./images/Reporteravatar.jpeg" alt="#" />
+                <span>Rashed Kabir</span>
+                <a href="#">Read More ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="blog__item__content">
+              <a href="#"><img src="./images/TourSing.jpeg" alt="#" /></a>
+              <div class="blog__img__detail">
+                <a href="#">Singapore Tour </a>
+                <span><i class="fa fa-clock"></i>6 day 5 night </span>
+              </div>
+              <a href="#" class="blog__head__a"
+                >The Best Cookie Recipes To Bake This Weekend
+              </a>
+              <p>
+                Lorem ipsum dolor sit amet ipsum adipisicing elit. Qui eligendi
+                vitae sit.
+              </p>
+              <div class="blog__maker">
+                <img src="./images/Reporteravatar.jpeg" alt="#" />
+                <span>Rashed Kabir</span>
+                <a href="#">Read More ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="slider__heading">
+          <h1>Testimonials</h1>
+          <h1>What People Say</h1>
+        </div>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <a href="#">
+              <img src="./images/Reporteravatar.jpeg" />
+            </a>
+            <p>"</p>
+            <h1>OMG! I cannot believe. It's Awesome"</h1>
+            <p class="comment">
+              My new site is so much faster and easier to work with than my old
+              site. They are here to help the customers to get their success.
+              Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
+              justo, ultrices in ligula.
+            </p>
+            <p class="name">Johnson William</p>
+            <p>Customer</p>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <img src="./images/Reporteravatar.jpeg" />
+            </a>
+            <p>"</p>
+            <h1>Simply the best. Better than all the rest."</h1>
+            <p class="comment">
+              My new site is so much faster and easier to work with than my old
+              site. They are here to help the customers to get their success.
+              Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
+              justo, ultrices in ligula.
+            </p>
+            <p class="name">Johnson William</p>
+            <p>Customer</p>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <img src="./images/Reporteravatar.jpeg" />
+            </a>
+            <p>"</p>
+            <h1>OMG! I cannot believe. It's Awesome"</h1>
+            <p class="comment">
+              My new site is so much faster and easier to work with than my old
+              site. They are here to help the customers to get their success.
+              Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
+              justo, ultrices in ligula.
+            </p>
+            <p class="name">Johnson William</p>
+            <p>Customer</p>
+          </div>
+
+          <div class="item">
+            <a href="#">
+              <img src="./images/Reporteravatar.jpeg" />
+            </a>
+            <p>"</p>
+            <h1>OMG! I cannot believe. It's Awesome"</h1>
+            <p class="comment">
+              My new site is so much faster and easier to work with than my old
+              site. They are here to help the customers to get their success.
+              Nemo sit eos, quod minus eius illo labore. Pellen tesque libero ut
+              justo, ultrices in ligula.
+            </p>
+            <p class="name">Johnson William</p>
+            <p>Customer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__list">
+          <div class="footer__item">
+            <h1><a href="#">Tour </a></h1>
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+              ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+              amet Semper at elit.
+            </p>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <div class="footer__item">
+            <h1>Usefull Links</h1>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog posts</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h1>More Info</h1>
+            <ul>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Vision & Values</a></li>
+              <li><a href="#">Awards</a></li>
+              <li><a href="#">Media</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer__item">
+            <h1>Subscribe to our Newsletter</h1>
+            <p>
+              Enter your email and receive the latest news, updates and special
+              offers from us.
+            </p>
+            <form>
+              <input type="email" placeholder="Your Email Address" />
+              <button>Subscribe Now</button>
+            </form>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            © 2021 Tour. All rights reserved. Design by
+            <a href="#">Lê Tuấn </a>
+          </p>
+          <div class="copyright__extra">
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy </a>
+            <a href="#">Contact us</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <section class="header__sidebar">
+      <div class="sidebar__item sidebar-first-item">
+        <div>
+          <a href="#">
+            <i class="fa fa-angle-double-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar__item">
+        <a href="#" class="d-flex flex-column">
+          <i class="fa fa-arrow-left"></i>
+          <span>Back</span>
+        </a>
+      </div>
+      <div class="sidebar__item">
+        <a href="#" class="d-flex flex-column">
+          <i class="fa fa-download"></i>
+          <span>Download</span>
+        </a>
+      </div>
+      <div class="sidebar__item">
+        <a href="#" class="d-flex flex-column">
+          <i class="fa fa-cart-arrow-down"></i>
+          <span>Buy</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="double__right">
+      <a href="#">
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </section>
+    <section class="scroll__top">
+      <div class="scroll__top__content">
+        <button onclick="ScrollToTop()">
+          <i class="fa fa-long-arrow-alt-up"></i>
+        </button>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <!-- open nav -->
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.transform = "scale(1)";
+        document.getElementById("myNav").style.visibility = "visible";
+        document.getElementById("myNav").style.opacity = "1";
+      }
+
+      function closeNav() {
+        document.getElementById("myNav").style.visibility = "hidden";
+        document.getElementById("myNav").style.transform = "scale(0.9)";
+
+        document.getElementById("myNav").style.opacity = "0";
+      }
+    </script>
+    <!-- counter -->
+    <script>
+      var a = 0;
+      $(window).scroll(function () {
+        var oTop = $("#counter").offset().top - window.innerHeight;
+        if (a == 0 && $(window).scrollTop() > oTop) {
+          $(".counter-value").each(function () {
+            var $this = $(this),
+              countTo = $this.attr("data-count");
+            $({
+              countNum: $this.text(),
+            }).animate(
+              {
+                countNum: countTo,
+              },
+
+              {
+                duration: 2000,
+                easing: "swing",
+                step: function () {
+                  $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                  $this.text(this.countNum);
+                  //alert('finished');
+                },
+              }
+            );
+          });
+          a = 1;
+        }
+      });
+    </script>
+    <!-- carousel -->
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <!-- Scroll -->
+    <script>
+      function ScrollToTop() {
+        window.scroll({ top: 0, left: 0, behavior: "smooth" });
+      }
+    </script>
+    <!-- theme -->
+    <script>
+      const checkbox = document.getElementById("checkbox");
+      checkbox.addEventListener("change", () => {
+        
+        document.body.classList.toggle("dark");
+        if(document.body.className==="dark")
+        {
+          document.getElementById('moon').style.visibility="hidden";
+          document.getElementById('sun').style.visibility="visible";
+        }
+        else {
+          document.getElementById('moon').style.visibility="visible";
+          document.getElementById('sun').style.visibility="hidden";
+        }
+
+        
+      });
+    </script>
+  </body>
+</html>
